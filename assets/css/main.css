@@ -1,0 +1,433 @@
+@import url(font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300&display=swap');
+
+/* Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input,
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+/* Basics */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #555;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0 0 1em 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+body,
+input,
+select,
+textarea {
+  color: #444;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+}
+
+a {
+  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  text-decoration: none;
+  border-bottom: dotted 1px;
+}
+
+/* Wrapper */
+
+#wrapper {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  perspective: 1000px;
+  min-height: 100vh;
+  padding: 3em;
+  width: 100%;
+}
+
+/* Header */
+
+header > :first-child::after {
+  content: '';
+  display: block;
+  background-color: #cccccc;
+  height: 1px;
+  margin: 1.5rem auto 1.75rem auto;
+  width: 5rem;
+}
+header h1 {
+  font-size: 1.9em;
+}
+
+header p {
+  font-size: 1em;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+/* Home Container*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.5s ease;
+  background-color: #ffffff;
+  padding: 3em;
+  width: 50%;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inner > nav {
+  margin: 3em 0;
+}
+
+/* Home img*/
+
+.panel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  max-width: calc(100vw - 6em);
+  width: 86em;
+}
+
+.panel > .image {
+  transition: transform 0.5s ease;
+  background-color: #777;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  min-height: 50em;
+  width: 50%;
+  z-index: 1;
+}
+
+.panel > .image img {
+  border-radius: 0;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  /* -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); */
+}
+
+/* Image */
+
+.image {
+  border-radius: 8px;
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+/* Button */
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button,
+.button {
+  appearance: none;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #cccccc;
+  color: #444 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 500;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.5em;
+  padding: 0 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+input[type='submit']:hover,
+input[type='submit'].active,
+input[type='reset']:hover,
+input[type='reset'].active,
+input[type='button']:hover,
+input[type='button'].active,
+button:hover,
+button.active,
+.button:hover,
+.button.active {
+  box-shadow: inset 0 0 0 1px #bef264;
+  color: #65a30d !important;
+}
+
+input[type='submit'].icon:before,
+input[type='reset'].icon:before,
+input[type='button'].icon:before,
+button.icon:before,
+.button.icon:before {
+  margin-right: 0.5em;
+}
+
+/* List */
+
+ul {
+  margin: 0 0 2em 0;
+}
+
+ul li {
+  display: block;
+  cursor: default;
+  list-style: none;
+}
+
+ul.special li > .button {
+  min-width: 15em;
+}
+
+ul.special li:after {
+  background-color: #cccccc;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  position: relative;
+  top: 100%;
+  width: 1px;
+}
+
+ul.special li:last-child::after {
+  display: none;
+}
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li:first-child {
+  display: inline-block;
+  padding: 0 0.5em 0 0.5em;
+}
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 0.5em 0 0.5em;
+}
+
+/* Icon */
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: x-large;
+  text-transform: none !important;
+  color: #666666;
+}
+
+.icon:hover:before {
+  color: #a3e635 !important;
+}
+
+.icon > .label {
+  display: none;
+}
+
+.icon.major {
+  display: block;
+  margin: 0 0 1.5em 0;
+}
+
+.icon.major:before {
+  cursor: default;
+  font-size: 2.5rem;
+  box-shadow: inset 0 0 0 2px #666666;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  display: inline-block;
+  border-radius: 100%;
+  color: #666666;
+}
