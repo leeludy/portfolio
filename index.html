@@ -7,8 +7,8 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <!-- Header -->
     <div id="wrapper">
+      <!-- Home -->
       <article id="home" class="panel">
         <div class="image">
           <img src="img/portrait-bis.png" alt="" />
@@ -47,6 +47,66 @@
           </div>
         </div>
       </article>
+
+      <!-- Contact -->
+      <div id="wrapper">
+        <article id="contact" class="panel">
+          <div class="image">
+            <img src="img/typewriter.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="inner">
+              <header>
+                <h1>contact</h1>
+              </header>
+              <form
+                id="fs-frm"
+                name="simple-contact-form"
+                accept-charset="utf-8"
+                action="https://formspree.io/f/mgejvwqd"
+                method="POST"
+              >
+                <fieldset id="fs-frm-inputs">
+                  <input type="hidden" name="_language" value="fr" />
+                  <label for="full-name">Votre Nom</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="full-name"
+                    placeholder="Bonjour, qui êtes vous ?"
+                    required=""
+                  />
+                  <label for="email-address">Adresse Email</label>
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="email-address"
+                    placeholder="contact@email.com"
+                    required=""
+                  />
+                  <label for="message">Message</label>
+                  <textarea
+                    rows="5"
+                    name="message"
+                    id="message"
+                    placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                    required=""
+                  ></textarea>
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    id="email-subject"
+                    value="Contact Form Portfolio"
+                  />
+                  <input type="hidden" name="_next" value="https://mywebsite.com/thanks.html" />
+                  <input type="text" name="_gotcha" style="display: none" />
+                </fieldset>
+                <input class="button" type="submit" value="Envoi" />
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </body>
 </html>

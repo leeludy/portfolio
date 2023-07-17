@@ -143,15 +143,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-input,
-select,
-textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-}
-
 /* Basics */
 
 h1,
@@ -225,7 +216,16 @@ header p {
   text-transform: uppercase;
 }
 
-/* Home Container*/
+/* Containers */
+
+.panel {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  max-width: calc(100vw - 6em);
+  width: 86em;
+}
 
 .content {
   display: flex;
@@ -236,6 +236,7 @@ header p {
   padding: 3em;
   width: 50%;
 }
+
 .inner {
   display: flex;
   flex-direction: column;
@@ -248,15 +249,13 @@ header p {
   margin: 3em 0;
 }
 
-/* Home img*/
+/* Image */
 
-.panel {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  max-width: calc(100vw - 6em);
-  width: 86em;
+.image {
+  border-radius: 8px;
+  border: 0;
+  display: inline-block;
+  position: relative;
 }
 
 .panel > .image {
@@ -282,19 +281,9 @@ header p {
   transform: scaleX(-1); */
 }
 
-/* Image */
-
-.image {
-  border-radius: 8px;
-  border: 0;
-  display: inline-block;
-  position: relative;
-}
-
 /* Button */
 
 input[type='submit'],
-input[type='reset'],
 input[type='button'],
 button,
 .button {
@@ -321,8 +310,6 @@ button,
 
 input[type='submit']:hover,
 input[type='submit'].active,
-input[type='reset']:hover,
-input[type='reset'].active,
 input[type='button']:hover,
 input[type='button'].active,
 button:hover,
@@ -334,7 +321,6 @@ button.active,
 }
 
 input[type='submit'].icon:before,
-input[type='reset'].icon:before,
 input[type='button'].icon:before,
 button.icon:before,
 .button.icon:before {
@@ -430,4 +416,88 @@ ul.icons li {
   display: inline-block;
   border-radius: 100%;
   color: #666666;
+}
+
+/* Form */
+#fs-frm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+}
+
+#fs-frm label {
+  display: flex;
+  align-items: baseline;
+  height: 3.5em;
+  line-height: 3.5em;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+}
+
+#fs-frm ::placeholder {
+  display: flex;
+  align-items: baseline;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
+}
+
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm #card-element {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+  margin-bottom: 1.5rem;
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+#fs-frm [type='text'],
+#fs-frm [type='email'] {
+  width: 100%;
+}
+
+#fs-frm input[type='submit'],
+.button {
+  max-width: 15em;
+  font-size: 0.8em;
+  font-weight: 500;
+  height: 3.5em;
+  letter-spacing: 0.25em;
+  line-height: 3.5em;
+  padding: 0 2em;
 }
