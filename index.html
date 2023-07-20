@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <title>Portfolio</title>
+    <title>Portfolio Sibylle</title>
+    <link rel="icon" type="image/x-icon" href="/img/fantail.jpg" />
   </head>
   <body>
     <!-- Home -->
-    <div id="wrapper">
-      <article id="home" class="panel">
+    <div id="home" class="wrapper">
+      <article class="panel">
         <div class="image">
           <img src="img/portrait-bis.png" alt="" />
         </div>
@@ -17,40 +18,57 @@
           <div class="inner">
             <header>
               <h1>sibylle peillard</h1>
-              <p>Say something about dev</p>
+              <p>web developer</p>
+              <p>reactjs, Typescript, nodejs</p>
             </header>
             <nav id="nav">
               <ul class="special">
                 <li>
-                  <a class="button" href="">work</a>
+                  <a class="button" href="#work">work</a>
                 </li>
                 <li>
-                  <a class="button" href="">about</a>
+                  <a class="button" href="#about">about</a>
                 </li>
                 <li>
-                  <a class="button" href="">contact</a>
+                  <a class="button" href="#contact">contact</a>
                 </li>
               </ul>
             </nav>
 
             <ul class="icons">
               <li>
-                <a href="#" class="icon fa-github"><span class="label">Github</span></a>
+                <a
+                  href="https://github.com/leeludy?tab=repositories"
+                  class="icon fa-github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Github"
+                  ><span class="label">Github</span></a
+                >
               </li>
               <li>
-                <a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
+                <a
+                  href="https://www.linkedin.com/in/sibylle-p"
+                  class="icon fa-linkedin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                  ><span class="label">LinkedIn</span></a
+                >
               </li>
-              <li>
-                <a href="#" class="icon fa-envelope"><span class="label">Email</span></a>
-              </li>
+              <!--       <li>
+                 <a href="#contact" class="icon fa-envelope"><span class="label">Email</span></a>
+             </li>-->
             </ul>
           </div>
         </div>
       </article>
     </div>
     <!-- Work -->
-    <div id="wrapper">
-      <article id="work" class="panel">
+    <div id="work" class="wrapper">
+      <a href="#home" class="icon ext fa-long-arrow-left" title="home"></a>
+
+      <article class="panel">
         <div class="slider">
           <header>
             <h1>work</h1>
@@ -63,7 +81,7 @@
           <ul class="slides">
             <li class="slide">
               <div class="image">
-                <img src="img/extra.png" alt="" />
+                <img src="img/extra.png" alt="code" />
               </div>
               <div class="content">
                 <div class="inner">
@@ -71,12 +89,12 @@
                     <div>
                       <h5>developer fullstack</h5>
                       <p>
-                        Creation and deployement of an internal cms solution with reguled client
-                        acces. Designed to enter data for virtual art exhibitions, its edit raw Json
-                        in the desired format to work directly with the Unity build via ftp.
+                        Creation and deployement of an internal solution with reguled client acces.
+                        Designed to enter data for virtual art exhibitions, it edits raw Json in the
+                        desired format to work directly with a chosen Unity build via ftp.
                         <br />
-                        Filling the position alone with four hours of mensual remote consulting with
-                        a freelance CTO. <br />
+                        Filling the position autonomously in an audiovisual startup with four hours
+                        of mensual remote consulting with a freelance CTO. <br />
                         Architecture and infra were build from scrash. complete liberty in
                         librairies choices and agile schedule management.<br />
                       </p>
@@ -103,7 +121,7 @@
             </li>
             <li class="slide">
               <div class="image">
-                <img src="img/axept.png" alt="" />
+                <img src="img/axept.png" alt="code" />
               </div>
               <div class="content">
                 <div class="inner">
@@ -136,7 +154,7 @@
             </li>
             <li class="slide">
               <div class="image">
-                <img src="img/team.jpg" alt="" />
+                <img src="img/team.jpg" alt="team" />
               </div>
               <div class="content">
                 <div class="inner">
@@ -162,7 +180,7 @@
                         class="button"
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="github"
+                        title="github project"
                         >Learn more</a
                       >
                       <p>
@@ -195,10 +213,12 @@
       </article>
     </div>
     <!-- About -->
-    <div id="wrapper">
-      <article id="about" class="panel">
+    <div id="about" class="wrapper">
+      <a href="#home" class="icon ext fa-long-arrow-left" title="home"></a>
+
+      <article class="panel">
         <div class="image">
-          <img src="img/sola.png" alt="" />
+          <img src="img/sola.png" alt="person" />
         </div>
         <div class="content">
           <div class="inner">
@@ -233,10 +253,12 @@
       </article>
     </div>
     <!-- Contact -->
-    <div id="wrapper">
-      <article id="contact" class="panel">
+    <div id="contact" class="wrapper">
+      <a href="#home" class="icon ext fa-long-arrow-left" title="home"></a>
+
+      <article class="panel">
         <div class="image">
-          <img src="img/typewriter.jpg" alt="" />
+          <img src="img/typewriter.jpg" alt="typewriter" />
         </div>
         <div class="content">
           <div class="inner">
@@ -252,15 +274,15 @@
             >
               <fieldset id="fs-frm-inputs">
                 <input type="hidden" name="_language" value="fr" />
-                <label for="full-name">Votre Nom</label>
+                <label for="full-name">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="full-name"
-                  placeholder="Bonjour, qui êtes vous ?"
+                  placeholder="Hello, who are you ?"
                   required=""
                 />
-                <label for="email-address">Adresse Email</label>
+                <label for="email-address">Email</label>
                 <input
                   type="email"
                   name="_replyto"
@@ -285,7 +307,7 @@
                 <input type="hidden" name="_next" value="https://mywebsite.com/thanks.html" />
                 <input type="text" name="_gotcha" style="display: none" />
               </fieldset>
-              <input class="button" type="submit" value="Envoi" />
+              <input class="button" type="submit" value="Send" />
             </form>
           </div>
         </div>

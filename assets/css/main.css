@@ -193,7 +193,7 @@ a {
 
 /* Wrapper */
 
-#wrapper {
+.wrapper {
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -203,6 +203,7 @@ a {
   min-height: 100vh;
   padding: 3em;
   width: 100%;
+  background-color: #f5f5f4;
 }
 
 /* Header */
@@ -413,7 +414,7 @@ ul.icons li {
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
-  font-size: x-large;
+  font-size: xx-large;
   text-transform: none !important;
   color: #666666;
 }
@@ -426,21 +427,9 @@ ul.icons li {
   display: none;
 }
 
-.icon.major {
-  display: block;
-  margin: 0 0 1.5em 0;
-}
-
-.icon.major:before {
-  cursor: default;
-  font-size: 2.5rem;
-  box-shadow: inset 0 0 0 2px #666666;
-  width: 2.5em;
-  height: 2.5em;
-  line-height: 2.5em;
-  display: inline-block;
-  border-radius: 100%;
-  color: #666666;
+.ext {
+  align-self: flex-end;
+  right: 9%;
 }
 
 /* carousel */
@@ -499,8 +488,7 @@ ul.icons li {
   outline: none;
 }
 
-.slider-controls label :hover,
-:focus {
+.slider-controls label :hover {
   cursor: pointer;
   box-shadow: 0px 0px 0px 6px rgb(163, 230, 53, 0.5);
 }
