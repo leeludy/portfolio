@@ -7,8 +7,8 @@
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Home -->
     <div id="wrapper">
-      <!-- Home -->
       <article id="home" class="panel">
         <div class="image">
           <img src="img/portrait-bis.png" alt="" />
@@ -47,103 +47,249 @@
           </div>
         </div>
       </article>
-      <!-- About -->
-      <div id="wrapper">
-        <article id="about" class="panel">
-          <div class="image">
-            <img src="img/andrew-neel-QLqNalPe0RA-unsplash.jpg" alt="" />
-          </div>
-          <div class="content">
-            <div class="inner">
-              <header>
-                <h1>about</h1>
-              </header>
-              <section>
-                <div>
-                  <h5>presentation</h5>
-                  <p>
-                    I enjoy to participate in revealing universes and atmospheres, identities. It’s
-                    a long-standing passion that made me navigate nearly a decade between art and
-                    crafts until I get to be interested now in the fierce web pixels.
-                  </p>
-                  <p>
-                    As a full-time developer and part-time creative/tinker, the front-end is now my
-                    new field of exploration combining requirement and logic. But also trying, being
-                    curious, understand, persevere daily together in the neuron's fights, to develop
-                    “beautiful” code that will be continuously improved, as it is a living practice
-                    constantly evolving.
-                  </p>
+    </div>
+    <!-- Work -->
+    <div id="wrapper">
+      <article id="work" class="panel">
+        <div class="slider">
+          <header>
+            <h1>work</h1>
+          </header>
+
+          <input type="radio" name="slides" id="btn-1" checked />
+          <input type="radio" name="slides" id="btn-2" />
+          <input type="radio" name="slides" id="btn-3" />
+
+          <ul class="slides">
+            <li class="slide">
+              <div class="image">
+                <img src="img/extra.png" alt="" />
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <section>
+                    <div>
+                      <h5>developer fullstack</h5>
+                      <p>
+                        Creation and deployement of an internal cms solution with reguled client
+                        acces. Designed to enter data for virtual art exhibitions, its edit raw Json
+                        in the desired format to work directly with the Unity build via ftp.
+                        <br />
+                        Filling the position alone with four hours of mensual remote consulting with
+                        a freelance CTO. <br />
+                        Architecture and infra were build from scrash. complete liberty in
+                        librairies choices and agile schedule management.<br />
+                      </p>
+                    </div>
+                    <div class="subsection">
+                      <p class="bold">
+                        ReactJs <span class="italic">( fonctional ) </span><br />
+                        Tanstak Query <br />
+                        React Hook Form<br />
+                        React Router <br />
+                        Styled Components <span class="italic">( Emotion )</span> <br />
+                      </p>
+                      <p class="bold">
+                        Typescript <br />
+                        NextJs <br />
+                        MongoDB, Prisma <br />
+                        Zod <br />
+                        Docker <br />
+                      </p>
+                    </div>
+                  </section>
                 </div>
-                <div>
-                  <h5>interests</h5>
-                  <p>Rowing / Sailing (everywhere, even in the code)</p>
-                  <p>Imagine+Drawing+Building things (everything, even unusefull. But fun ! )</p>
-                  <p>ThreeJs</p>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="image">
+                <img src="img/axept.png" alt="" />
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <section>
+                    <div>
+                      <h5>developer front react</h5>
+                      <p>
+                        In the context of an internship in a company developing RGPD rights
+                        management solutions. Under the responsibility of the lead developer front,
+                        designer, and customer succes head:<br />
+                        <span class="italic bold"
+                          >taking part to agile routine, implementation of user interface features,
+                          bugs fix, participing with providing/updating storybook content and
+                          documentation.</span
+                        >
+                      </p>
+                    </div>
+                    <div class="subsection">
+                      <p></p>
+                      <p class="bold">
+                        ReactJs <span class="italic">( class & fonctional ) </span><br />
+                        Typescript <br />
+                        Styled Components <br />
+                        Storybook <br />
+                      </p>
+                    </div>
+                  </section>
                 </div>
-              </section>
-            </div>
+              </div>
+            </li>
+            <li class="slide">
+              <div class="image">
+                <img src="img/team.jpg" alt="" />
+              </div>
+              <div class="content">
+                <div class="inner">
+                  <section>
+                    <div>
+                      <h5>project SKT Aeroshutter</h5>
+                      <p>
+                        This project was initialized as a four-person team to conclude our web
+                        development studies.<br />
+                        It was the opportunity to set up a project in its entirety:<br />
+                        <span class="italic bold"
+                          >choice of languages, mockups design, client validations, uml diagrams,
+                          agile schedules, and implementation of the solution in a limited time </span
+                        >.<br />
+                        Designed to be a real internal tool for pilots on field missions and people
+                        managing drone spare parts stock, it was taken up by the sponsor company and
+                        it's still keep growing today.
+                      </p>
+                    </div>
+                    <div class="subsection">
+                      <a
+                        href="https://github.com/leeludy/SKT"
+                        class="button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="github"
+                        >Learn more</a
+                      >
+                      <p>
+                        Supported on <span class="bold"> NodeJS </span><br />
+                        Front with <span class="bold">Create React App</span> <br />
+                        <span class="bold">Bootstrap</span> global style <br />
+                        Back including <span class="bold">Express</span> and
+                        <span class="bold">Axios</span><br />
+                        <span class="bold">Maria DB </span>data base
+                      </p>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="slider-controls">
+            <li>
+              <label for="btn-1"> </label>
+            </li>
+            <li>
+              <label for="btn-2"></label>
+            </li>
+            <li>
+              <label for="btn-3"></label>
+            </li>
           </div>
-        </article>
-      </div>
-      <!-- Contact -->
-      <div id="wrapper">
-        <article id="contact" class="panel">
-          <div class="image">
-            <img src="img/typewriter.jpg" alt="" />
+        </div>
+      </article>
+    </div>
+    <!-- About -->
+    <div id="wrapper">
+      <article id="about" class="panel">
+        <div class="image">
+          <img src="img/sola.png" alt="" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <header>
+              <h1>about</h1>
+            </header>
+            <section>
+              <div>
+                <h5>presentation</h5>
+                <p>
+                  I enjoy to participate in revealing universes and atmospheres, identities. It’s a
+                  long-standing passion that made me navigate nearly a decade between art and crafts
+                  until I get to be interested now in the fierce web pixels.
+                </p>
+                <p>
+                  As a full-time web developer and part-time creative/tinker, the front-end is now
+                  my new field of exploration combining requirement and logic. But also trying,
+                  being curious, understand, persevere daily together in the neuron's fights, to
+                  develop “beautiful” code that will be continuously improved, as it is a living
+                  practice constantly evolving.
+                </p>
+              </div>
+              <div>
+                <h5>interests</h5>
+                <p>Rowing / Sailing (everywhere, even in the code)</p>
+                <p>Imagine+Drawing+Building things (everything, even unusefull. But fun ! )</p>
+                <p>ThreeJs</p>
+              </div>
+            </section>
           </div>
-          <div class="content">
-            <div class="inner">
-              <header>
-                <h1>contact</h1>
-              </header>
-              <form
-                id="fs-frm"
-                name="simple-contact-form"
-                accept-charset="utf-8"
-                action="https://formspree.io/f/mgejvwqd"
-                method="POST"
-              >
-                <fieldset id="fs-frm-inputs">
-                  <input type="hidden" name="_language" value="fr" />
-                  <label for="full-name">Votre Nom</label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="full-name"
-                    placeholder="Bonjour, qui êtes vous ?"
-                    required=""
-                  />
-                  <label for="email-address">Adresse Email</label>
-                  <input
-                    type="email"
-                    name="_replyto"
-                    id="email-address"
-                    placeholder="contact@email.com"
-                    required=""
-                  />
-                  <label for="message">Message</label>
-                  <textarea
-                    rows="5"
-                    name="message"
-                    id="message"
-                    placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
-                    required=""
-                  ></textarea>
-                  <input
-                    type="hidden"
-                    name="_subject"
-                    id="email-subject"
-                    value="Contact Form Portfolio"
-                  />
-                  <input type="hidden" name="_next" value="https://mywebsite.com/thanks.html" />
-                  <input type="text" name="_gotcha" style="display: none" />
-                </fieldset>
-                <input class="button" type="submit" value="Envoi" />
-              </form>
-            </div>
+        </div>
+      </article>
+    </div>
+    <!-- Contact -->
+    <div id="wrapper">
+      <article id="contact" class="panel">
+        <div class="image">
+          <img src="img/typewriter.jpg" alt="" />
+        </div>
+        <div class="content">
+          <div class="inner">
+            <header>
+              <h1>contact</h1>
+            </header>
+            <form
+              id="fs-frm"
+              name="simple-contact-form"
+              accept-charset="utf-8"
+              action="https://formspree.io/f/mgejvwqd"
+              method="POST"
+            >
+              <fieldset id="fs-frm-inputs">
+                <input type="hidden" name="_language" value="fr" />
+                <label for="full-name">Votre Nom</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="full-name"
+                  placeholder="Bonjour, qui êtes vous ?"
+                  required=""
+                />
+                <label for="email-address">Adresse Email</label>
+                <input
+                  type="email"
+                  name="_replyto"
+                  id="email-address"
+                  placeholder="contact@email.com"
+                  required=""
+                />
+                <label for="message">Message</label>
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                  required=""
+                ></textarea>
+                <input
+                  type="hidden"
+                  name="_subject"
+                  id="email-subject"
+                  value="Contact Form Portfolio"
+                />
+                <input type="hidden" name="_next" value="https://mywebsite.com/thanks.html" />
+                <input type="text" name="_gotcha" style="display: none" />
+              </fieldset>
+              <input class="button" type="submit" value="Envoi" />
+            </form>
           </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
   </body>
 </html>

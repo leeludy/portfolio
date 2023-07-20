@@ -182,6 +182,15 @@ a {
   border-bottom: dotted 1px;
 }
 
+.italic {
+  font-style: italic;
+  letter-spacing: normal;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 /* Wrapper */
 
 #wrapper {
@@ -243,6 +252,7 @@ header p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 3em 0;
 }
 
 .inner > nav {
@@ -258,6 +268,14 @@ header p {
   text-align: justify;
 }
 
+.subsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0 0 3em;
+}
+
 /* Image */
 
 .image {
@@ -267,7 +285,7 @@ header p {
   position: relative;
 }
 
-.panel > .image {
+.panel .image {
   transition: transform 0.5s ease;
   background-color: #777;
   background-position: center;
@@ -279,15 +297,13 @@ header p {
   z-index: 1;
 }
 
-.panel > .image img {
+.panel .image img {
   border-radius: 0;
   display: block;
   height: 100%;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  /* -webkit-transform: scaleX(-1);
-  transform: scaleX(-1); */
 }
 
 /* Button */
@@ -425,6 +441,164 @@ ul.icons li {
   display: inline-block;
   border-radius: 100%;
   color: #666666;
+}
+
+/* carousel */
+.slider {
+  position: relative;
+  width: inherit;
+  min-height: 300px;
+  overflow: hidden;
+  min-height: 50em;
+}
+
+.slider input[type='radio'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider h1 {
+  font-size: 1.9em;
+  position: absolute;
+  z-index: 9999;
+  left: 68.3%;
+  top: 3em;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 2em;
+  left: 73%;
+  min-width: 42em;
+  text-align: center;
+  transform: translatex(-50%);
+  list-style: none;
+  text-align: center;
+}
+
+.slider-controls li {
+  box-sizing: content-box;
+  /* flex: 1 1 auto; */
+  max-width: calc((100% / 6) - 20px);
+  margin: 0 1em;
+  transition: all 300ms ease-in-out;
+}
+
+.slider-controls label {
+  display: block;
+  background-color: #666;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: none;
+}
+
+.slider-controls label :hover,
+:focus {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 6px rgb(163, 230, 53, 0.5);
+}
+/* 
+.slider-controls img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 300ms ease-in-out;
+}
+ */
+#btn-1:checked ~ .slider-controls label[for='btn-1'] {
+  background-color: #a3e635;
+  /* box-shadow: 0px 0px 0px 4px #a3e635; */
+}
+
+#btn-2:checked ~ .slider-controls label[for='btn-2'] {
+  background-color: #a3e635;
+  /* box-shadow: 0px 0px 0px 4px #a3e635; */
+}
+
+#btn-3:checked ~ .slider-controls label[for='btn-3'] {
+  background-color: #a3e635;
+  /* box-shadow: 0px 0px 0px 4px #a3e635; */
+}
+
+/* carousel Slides */
+
+.slides {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translatex(100%);
+  transition: transform 250ms linear;
+}
+
+/* Slide animations */
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  transform: translatex(0);
+  opacity: 1;
+}
+
+#btn-1:not(:checked) ~ .slides .slide:nth-child(1) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-2:not(:checked) ~ .slides .slide:nth-child(2) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+#btn-3:not(:checked) ~ .slides .slide:nth-child(3) {
+  animation-name: swap-out;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+}
+
+@keyframes swap-out {
+  100% {
+    transform: translatex(0%);
+  }
+
+  50% {
+    transform: translatex(50%);
+    opacity: 0;
+  }
+
+  0% {
+    transform: translatex(100%);
+    opacity: 1;
+  }
 }
 
 /* Form */
