@@ -7,18 +7,18 @@
     <title>Portfolio Sibylle</title>
     <link rel="icon" type="image/x-icon" href="/img/fantail.jpg" />
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/languages.js"></script>
   </head>
   <body>
     <!-- Home -->
     <div id="home" class="wrapper">
-      <div id="button-switch" role="switch" class="switch r">
-        <input type="checkbox" class="checkbox" />
+      <div id="switchLanguage" role="switch" class="switch r">
+        <input id="checkboxLang" type="checkbox" class="checkbox"/>
         <div class="knobs">
           <span></span>
         </div>
         <div class="layer"></div>
       </div>
-
       <article class="panel">
         <div class="image">
           <img src="img/portrait-bis.png" alt="" />
@@ -27,19 +27,19 @@
           <div class="inner">
             <header>
               <h1>sibylle peillard</h1>
-              <p>web developer</p>
+              <p class="jobTitle">web developer</p>
               <p>reactjs, Typescript, nodejs</p>
             </header>
             <nav id="nav">
               <ul class="special">
                 <li>
-                  <a class="button" href="#work">work</a>
+                  <a class="button menuBtn1" href="#work">work</a>
                 </li>
                 <li>
-                  <a class="button" href="#about">about</a>
+                  <a class="button menuBtn2" href="#about">about</a>
                 </li>
                 <li>
-                  <a class="button" href="#contact">contact</a>
+                  <a class="button menuBtn3" href="#contact">contact</a>
                 </li>
               </ul>
             </nav>
@@ -65,9 +65,6 @@
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
-              <!--       <li>
-                 <a href="#contact" class="icon fa-envelope"><span class="label">Email</span></a>
-             </li>-->
             </ul>
           </div>
         </div>
@@ -78,7 +75,7 @@
       <article class="panel">
         <div class="slider">
           <header class="absolute">
-            <h1>work</h1>
+            <h1 class="section1">work</h1>
           </header>
 
           <input type="radio" name="slides" id="btn-1" checked />
@@ -93,12 +90,12 @@
               <div class="content">
                 <div class="inner">
                   <header class="tiny">
-                    <h1>work</h1>
+                    <h1 class="job1">work</h1>
                   </header>
                   <section>
                     <div>
-                      <h5>developer fullstack</h5>
-                      <p>
+                      <h5 class="jobTitle1">developer fullstack</h5>
+                      <p class="job1Text">
                         Creation and deployement of an internal solution with reguled client acces.
                         Designed to enter data for virtual art exhibitions, it edits raw Json in the
                         desired format to work directly with a chosen Unity build via ftp.
@@ -136,20 +133,20 @@
               <div class="content">
                 <div class="inner">
                   <header class="tiny">
-                    <h1>work</h1>
+                    <h1 class="job2">work</h1>
                   </header>
                   <section>
                     <div>
-                      <h5>developer front react</h5>
-                      <p>
+                      <h5 class="jobTitle2">developer front react</h5>
+                      <p class="job2Text">
                         In the context of an internship in a company developing RGPD rights
                         management solutions. Under the responsibility of the lead developer front,
                         designer, and customer succes head:<br />
-                        <span class="italic bold"
-                          >taking part to agile routine, implementation of user interface features,
-                          bugs fix, participing with providing/updating storybook content and
-                          documentation.</span
-                        >
+                      </p>
+                      <p class="italic bold job2TextBold">
+                        taking part to agile routine, implementation of user interface features,
+                        bugs fix, participing with providing/updating storybook content and
+                        documentation.
                       </p>
                     </div>
                     <div class="subsection">
@@ -172,19 +169,21 @@
               <div class="content">
                 <div class="inner">
                   <header class="tiny">
-                    <h1>work</h1>
+                    <h1 class="job3">work</h1>
                   </header>
                   <section>
                     <div>
-                      <h5>project SKT Aeroshutter</h5>
-                      <p>
+                      <h5 class="jobTitle3">project SKT Aeroshutter</h5>
+                      <p class="job3Text1">
                         This project was initialized as a four-person team to conclude our web
                         development studies.<br />
                         It was the opportunity to set up a project in its entirety:<br />
-                        <span class="italic bold"
-                          >choice of languages, mockups design, client validations, uml diagrams,
-                          agile schedules, and implementation of the solution in a limited time </span
-                        >.<br />
+                      </p>
+                      <p class="italic bold job3TextBold">
+                        choice of languages, mockups design, client validations, uml diagrams, agile
+                        schedules, and implementation of the solution in a limited time
+                      </p>
+                      <p class="job3Text2">
                         Designed to be a real internal tool for pilots on field missions and people
                         managing drone spare parts stock, it was taken up by the sponsor company and
                         it's still keep growing today.
@@ -193,20 +192,24 @@
                     <div class="subsection">
                       <a
                         href="https://github.com/leeludy/SKT"
-                        class="button"
+                        class="button btnLinkGit"
                         target="_blank"
                         rel="noopener noreferrer"
                         title="github project"
                         >Learn more</a
                       >
-                      <p>
-                        Supported on <span class="bold"> NodeJS </span><br />
-                        Front with <span class="bold">Create React App</span> <br />
-                        <span class="bold">Bootstrap</span> global style <br />
-                        Back including <span class="bold">Express</span> and
-                        <span class="bold">Axios</span><br />
-                        <span class="bold">Maria DB </span>data base
-                      </p>
+                      <div>
+                        <p class="job3tech1">Supported on <span class="bold"> NodeJS </span></p>
+                        <p class="job3tech2">
+                          Front with <span class="bold">Create React App</span>
+                        </p>
+                        <p class="job3tech3"><span class="bold">Bootstrap</span> global style</p>
+                        <p class="job3tech4">
+                          Back including <span class="bold">Express</span> and
+                          <span class="bold">Axios</span>
+                        </p>
+                        <p class="job3tech5"><span class="bold">Maria DB </span>data base</p>
+                      
                     </div>
                   </section>
                 </div>
@@ -237,17 +240,17 @@
         <div class="content">
           <div class="inner">
             <header>
-              <h1>about</h1>
+              <h1 class="section2">about</h1>
             </header>
             <section>
               <div>
-                <h5>presentation</h5>
-                <p>
+                <h5 class="subsection1">presentation</h5>
+                <p class="subsec1Text1">
                   I enjoy to participate in revealing universes and atmospheres, identities. It’s a
                   long-standing passion that made me navigate nearly a decade between art and crafts
                   until I get to be interested in the mighty web pixels.
                 </p>
-                <p>
+                <p class="subsec1Text2">
                   As a full-time web developer and part-time creative/tinker, the front-end is now
                   my new field of exploration combining requirement and logic. But also trying,
                   being curious, understand, persevere daily together in the neuron's fights, to
@@ -256,10 +259,12 @@
                 </p>
               </div>
               <div>
-                <h5>interests</h5>
-                <p>Rowing / Sailing (everywhere, even in the code)</p>
-                <p>Imagine+Drawing+Building things (everything, even unusefull. But fun ! )</p>
-                <p>ThreeJs</p>
+                <h5 class="subsection2">interests</h5>
+                <p class="subsec2Text1">Rowing / Sailing (everywhere, even in the code)</p>
+                <p class="subsec2Text2">
+                  Imagine+Drawing+Building things (everything, even unusefull. But fun ! )
+                </p>
+                <p class="subsec2Text3">ThreeJs</p>
               </div>
             </section>
           </div>
@@ -275,7 +280,7 @@
         <div class="content">
           <div class="inner">
             <header>
-              <h1>contact</h1>
+              <h1 class="section3">contact</h1>
             </header>
             <form
               id="fs-frm"
@@ -286,7 +291,7 @@
             >
               <fieldset id="fs-frm-inputs">
                 <input type="hidden" name="_language" value="fr" />
-                <label for="full-name">Name</label>
+                <label for="full-name" class="formName">Name</label>
                 <input
                   type="text"
                   name="name"
@@ -319,7 +324,7 @@
                 <input type="hidden" name="_next" value="https://mywebsite.com/thanks.html" />
                 <input type="text" name="_gotcha" style="display: none" />
               </fieldset>
-              <input class="button" type="submit" value="Send" />
+              <button class="button formBtn" type="submit">send</button>
             </form>
           </div>
         </div>
