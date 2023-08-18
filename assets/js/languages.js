@@ -6,17 +6,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (this.checkboxValue === "ENG") {
       document.documentElement.setAttribute("lang", "en");
+      localStorage.setItem("checkboxLang", "ENG");
       for (let key in dataENG) {
         document.querySelector("." + key).textContent = dataENG[key];
       }
     }
     if (this.checkboxValue === "FR") {
       document.documentElement.setAttribute("lang", "fr");
+      localStorage.setItem("checkboxLang", "FR");
       for (let key in dataFR) {
         document.querySelector("." + key).textContent = dataFR[key];
       }
     }
   });
+  function isChosenLang() {
+    const switchLangLocalState = localStorage.getItem("checkboxLang");
+    if (switchLangLocalState === "ENG") {
+      document.documentElement.setAttribute("lang", "en");
+      for (let key in dataENG) {
+        document.querySelector("." + key).textContent = dataENG[key];
+      }
+    }
+    if (switchLangLocalState === "FR") {
+      document.documentElement.setAttribute("lang", "fr");
+      for (let key in dataFR) {
+        document.querySelector("." + key).textContent = dataFR[key];
+      }
+    }
+  }
 
   /* Data */
 
@@ -46,8 +63,11 @@ document.addEventListener("DOMContentLoaded", function () {
       "choice of languages, mockups design, client validations, uml diagrams, agile schedules, and implementation of the solution in a limited time. \n",
     job3Text2:
       "Designed to be a real internal tool for pilots on field missions and people managing drone spare parts stock, it was taken up by the sponsor company and it's still keep growing today.",
-    job3subsec:
-      " Supported on  NodeJS \n Front withCreate React App \n Bootstrap global style \n Back including Express and Axios \n Maria DB data base",
+    job3tech1: "Supported on NodeJS",
+    job3tech2: "Front with Create React App",
+    job3tech3: "Bootstrap global style",
+    job3tech4: "Back including Express and Axios",
+    job3tech5: "Maria DB data base",
     btnLinkGit: "learn more",
     subsection1: "presentation",
     subsec1Text1:
@@ -106,4 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
     formName: "votre nom",
     formBtn: "envoi",
   };
+
+  isChosenLang();
 });

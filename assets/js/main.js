@@ -7,15 +7,7 @@ window.onbeforeunload = () => {
 
 document.addEventListener("DOMContentLoaded", function () {
   /* Scroll top */
-
-  const scrollToTopButton = document.getElementsByClassName("scrollToTopBtn");
-
-  if (scrollToTopButton) {
-    console.log("hello");
-  } else {
-    console.log("something wrong");
-    console.log("scrollToTopButton::", scrollToTopButton);
-  }
+  const scrollToTopButton = document.getElementById("returnTopBtn");
 
   const scrollFunc = () => {
     let y = window.scrollY;
