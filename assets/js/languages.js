@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     jobTitle2: "developer front react",
     jobTitle3: "project skt aeroshutter",
     job1Text:
-      "Creation and deployement of an internal solution with reguled client acces. Designed to enter data for virtual art exhibitions, it edits raw Json in the desired format to work directly with a chosen Unity build via ftp.  Filling the position autonomously in an audiovisual startup with four hours of mensual remote consulting with a freelance CTO.  Architecture and infra were build from scratsh. complete liberty in librairies choices and agile schedule management. ",
+      "Creation and deployment of an internal solution with reguled client acces. Designed to enter data for virtual art exhibitions, it edits raw Json in the desired format to work directly with a chosen Unity build via ftp.  Filling the position autonomously in an audiovisual startup with four hours of mensual remote consulting with a freelance CTO.  Architecture and infra were build from scratsh. Complete liberty in librairies choices and agile schedule management. ",
     job2Text:
       " In the context of an internship in a company developing RGPD rights, management solutions. Under the responsibility of the lead developer front, designer, and customer succes head:",
     job2TextBold:
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     job3TextBold:
       "choice of languages, mockups design, client validations, uml diagrams, agile schedules, and implementation of the solution in a limited time. \n",
     job3Text2:
-      "Designed to be a real internal tool for pilots on field missions and people managing drone spare parts stock, it was taken up by the sponsor company and it's still keep growing today.",
+      "Intended to be a real internal tool for pilots on field missions and people managing drone spare parts stock, it was taken up by the sponsor company and it's still keep growing today.",
     job3tech1: "Supported on NodeJS",
     job3tech2: "Front with Create React App",
     job3tech3: "Bootstrap global style",
@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
     subsec1Text1:
       " I enjoy to participate in revealing universes and atmospheres, identities. It’s a long-standing passion that made me navigate nearly a decade between art and crafts until I get to be interested in web pixels.",
     subsec1Text2:
-      " As a full-time web developer and part-time creative/tinker, the front-end is now my new field of exploration combining requirement and logic. But also trying, being curious, understand, persevere daily together in the neuron's fights, to develop “beautiful” code that will be continuously improved, as it is a living practice constantly evolving.",
+      " As a full-time web developer and part-time creative/tinker, the front-end is now my new field of exploration combining requirement and logic. But also trying, being curious, understanding, persevering daily together in the neuron's fights, to develop “beautiful” code that will be continuously improved, as it is a living practice constantly evolving.",
     subsection2: "interest",
     subsec2Text1: "Rowing / Sailing (everywhere, even in the code)",
-    subsec2Text2: "Imagine+Drawing+Building things (everything, even unusefull. But fun ! )",
+    subsec2Text2: "Imagine+Draw+Buil things (everything, even unusefull. But fun !)",
     subsec2Text3: "ThreeJs",
     formName: "name",
     formBtn: "send",
@@ -118,10 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
     subsec1Text1:
       "J'aime participer à révéler des univers et des atmosphères, des identités. C'est une passion de longue date qui m'a fait naviguer près d'une décennie entre l'art et l'artisanat jusqu'à ce que j'en vienne à m'intéresser aux pixels du web.",
     subsec1Text2:
-      "Développeuse web à plein temps et bricoleuse à tier temps , le front-end est maintenant mon nouveau terrain de jeux d'exploration alliant exigence et logique. Mais aussi essayer, être curieux, comprendre, persévérer ensemble dans les combats de neurones de tous les jours, pour développer du 'beau' code qui continuera d'être amélioré, comme c'est une pratique vivante évoluant en permanence.",
+      "Développeuse web à plein temps et bricoleuse à tiers temps , le front-end est maintenant mon nouveau terrain de jeux d'exploration alliant exigence et logique. Mais aussi essayer, être curieuse, comprendre, persévérer ensemble dans les combats de neurones de tous les jours, pour développer du 'beau' code qui continuera d'être amélioré, puisque c'est une pratique vivante évoluant en permanence.",
     subsection2: "intérêts",
     subsec2Text1: "Ramer / Naviguer (partout, même dans le code)",
-    subsec2Text2: "Imaginer+Dessiner+Fabriquer des trucs (n'importe, même inutile. Mais fun ! )",
+    subsec2Text2:
+      "Imaginer+Dessiner+Fabriquer des trucs (quoi que ce soit, même inutile. Mais fun ! )",
     subsec2Text3: "ThreeJs",
     formName: "votre nom",
     formBtn: "envoi",
