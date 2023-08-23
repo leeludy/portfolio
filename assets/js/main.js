@@ -42,8 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         startY: 0,
         endX: 0,
         endY: 0,
-        minX: 30,
-        maxY: 60,
+        minX: 30, // min X swipe for horizontal swipe
+        maxX: 30, // max X difference for vertical swipe
+        minY: 50, // min Y swipe for vertial swipe
+        maxY: 60, // max Y difference for horizontal swipe
       },
       direction = null,
       element = document.getElementById(id);
@@ -63,29 +65,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     element.addEventListener("touchend", function (event) {
       if (
+        // Horizontal move.
         Math.abs(detect.endX - detect.startX) > detect.minX &&
         Math.abs(detect.endY - detect.startY) < detect.maxY
       ) {
         direction = detect.endX > detect.startX ? "right" : "left";
+      } else if (
+        // Vertical move.
+        Math.abs(detect.endY - detect.startY) > detect.minY &&
+        Math.abs(detect.endX - detect.startX) < detect.maxX
+      ) {
+        direction = detect.endY > detect.startY ? "up" : "down";
       }
 
       if (direction !== null && typeof f === "function") {
-        f(element, direction);
+        f(element, direction, detect.endY, detect.startY);
       }
     });
   }
 
-  function swipeDirection(element, direction) {
+  function swipeDirection(element, direction, endY, startY) {
     const inputsCaroussel = element.getElementsByTagName("input");
 
     for (var i = 0; i < inputsCaroussel.length; i++) {
       if (inputsCaroussel[i].type == "radio" && inputsCaroussel[i].checked) {
         if (direction == "right" && inputsCaroussel[i - 1] !== undefined) {
-          inputsCaroussel[i].checked = false;
-          inputsCaroussel[i - 1].checked = "checked";
+          return (inputsCaroussel[i].checked = false), (inputsCaroussel[i - 1].checked = "checked");
         }
+
         if (direction == "left" && inputsCaroussel[i + 1] !== undefined) {
           return (inputsCaroussel[i].checked = false), (inputsCaroussel[i + 1].checked = "checked");
+        }
+
+        if (direction == "down") {
+          return window.scrollBy({
+            top: -(endY - startY),
+            left: 0,
+            behavior: "smooth",
+          });
+        }
+
+        if (direction == "up") {
+          return window.scrollBy({
+            top: -(endY - startY),
+            left: 0,
+            behavior: "smooth",
+          });
         }
       }
     }
