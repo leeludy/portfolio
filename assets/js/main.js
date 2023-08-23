@@ -6,7 +6,7 @@ window.onbeforeunload = () => {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
-  /* Scroll top */
+  /* Btn Scroll top */
   const scrollToTopButton = document.getElementById("returnTopBtn");
 
   const scrollFunc = () => {
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (c > 0) {
       window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, c - c / 10);
+      window.scrollTo({ left: 0, top: c - c, behavior: "smooth" });
     }
   };
 
