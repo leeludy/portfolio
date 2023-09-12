@@ -1,5 +1,3 @@
-### -- WORK IN PROGRESS --
-
 ### Content
 
 A simple personal site <br/>

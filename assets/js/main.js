@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (direction == "down") {
           return window.scrollBy({
-            top: -(endY - startY),
+            top: -(endY - startY) + 300,
             left: 0,
             behavior: "smooth",
           });
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (direction == "up") {
           return window.scrollBy({
-            top: -(endY - startY),
+            top: -(endY - startY) - 300,
             left: 0,
             behavior: "smooth",
           });

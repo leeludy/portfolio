@@ -303,13 +303,13 @@ header p {
 .inner > nav {
   margin: 3em 0;
 }
-.inner section {
+.inner article {
   gap: 3em;
   display: flex;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 5em 2em 4rem 2rem;
 }
-.inner section p {
+.inner article p {
   text-align: justify;
   font-size: clamp(0.9rem, 1rem, 1.2rem);
 }
@@ -344,16 +344,16 @@ header p {
     padding: 0;
   }
 
-  .inner section {
+  .inner article {
     padding: 0;
     gap: 2em;
   }
 
-  .inner section h5 {
+  .inner article h5 {
     font-size: 1rem !important;
   }
 
-  .inner section p {
+  .inner article p {
     letter-spacing: 0.02em;
     text-justify: distribute;
   }
@@ -388,7 +388,7 @@ header p {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
-  min-height: 50em;
+  /* min-height: 50em; */
   width: 50%;
   z-index: 1;
 }
@@ -709,8 +709,10 @@ ul.icons li {
   font-size: 1.9em;
   position: absolute;
   z-index: 9999;
-  left: 68.3%;
-  top: 3em;
+  left: 20vw;
+  top: 2em;
+  width: 100%;
+  text-align: center;
 }
 
 .slider-controls {
@@ -742,9 +744,9 @@ ul.icons li {
   outline: none;
 }
 
-.slider-controls label :hover {
+.slider-controls label:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 0px 6px rgb(163, 230, 53, 0.5);
+  box-shadow: 0px 0px 0px 3px rgb(163, 230, 53, 0.5);
 }
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"] {
@@ -955,7 +957,7 @@ ul.icons li {
 #fs-frm input[type="submit"],
 .button {
   max-width: 15em;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 500;
   height: 3.5em;
   letter-spacing: 0.25em;
