@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (c > 0) {
       window.requestAnimationFrame(scrollToTop);
-      window.scrollTo({ left: 0, top: c - c, behavior: "smooth" });
+      window.scrollTo({ left: 0, top: c - c });
     }
   };
 

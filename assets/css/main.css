@@ -107,6 +107,7 @@ section {
 }
 
 body {
+  min-height: 100%;
   line-height: 1;
   letter-spacing: 0.05em;
 }
@@ -588,7 +589,7 @@ button.icon:before,
 
 @media only screen and (max-width: 1400px) {
   .scrollToTopBtn {
-    left: 87vw;
+    left: 86vw;
     right: 0;
     bottom: 0.25em;
   }
